@@ -125,6 +125,12 @@ public class SnakesAndLaddersForm {
                 playerOneLabel.setText("P1");
                 playerTwoLabel.setText("P2");
 
+                player1.setWinner(false);
+                player2.setWinner(false);
+
+                player1.setCurrentPosition(0);
+                player2.setCurrentPosition(0);
+
 
             }
         });
@@ -343,7 +349,10 @@ public class SnakesAndLaddersForm {
         int xDifference = column2 - column1;
         int yDifference = row2 - row1;
 
-        if ((row2 - row1) != 0) {
+        System.out.println("ydifference "+yDifference);
+        System.out.println("xdifference "+xDifference);
+
+        if (yDifference != 0) {
             tanTheta = -((double) xDifference) / ((double) yDifference);
             System.out.println("tan theta" + tanTheta);
             theta = Math.toDegrees(Math.atan(tanTheta));
