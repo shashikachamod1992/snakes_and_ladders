@@ -357,7 +357,7 @@ public class SnakesAndLaddersForm {
             System.out.println("tan theta" + tanTheta);
             theta = Math.toDegrees(Math.atan(tanTheta));
         } else {
-            theta = 90;
+            theta = -90;
         }
 
 
